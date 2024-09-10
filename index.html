@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: aliceblue;
+        }
+
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container div{
+         background-color: beige;
+         padding: 10px;
+          margin: 10px; 
+         text-align: justify;
+         text-align: center;
+         width: 500px;
+         border-radius: 20px;
+         box-shadow: 5px 5px rgb(227, 227, 222);
+        
+        }
+
+        button{
+            background-color: rgb(215, 222, 228);
+            border: none;
+            padding: 10px 30px;
+            border-radius: 20px;
+        }
+        button:hover {
+            background-color: rgb(186, 213, 231);
+
+        }
+     
+
+    </style>
+</head>
+<body>
+
+    <div id="container">
+
+    <div>
+
+    <h1>JAVASCRIPT</h1>
+    <h2>Truthy and Falsy</h2>
+    <p>In JavaScript, truthy and falsy values determine how a value behaves in a Boolean context (e.g., in `if` statements). 
+        Truthy values are those that evaluate to `true` in a Boolean context, such as non-empty strings, non-zero numbers, and objects.
+        Falsy values, on the other hand, evaluate to `false`. Common falsy values include `0`, `""` (empty string), `null`, `undefined`, `NaN`, and `false`. You can use these inherent properties without explicitly checking for `true` or `false` in conditions.</p>
+    
+    <button id="button">Click me</button>
+    </div>
+    </div>
+
+
+    <script src="truth&falsy.js"></script>
+
+
+</body>
+</html>
