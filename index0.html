@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <style>
+
+        :root {
+            --varCon-color: #FB8772;
+            --string-color: #E9CD7A;
+            --other-color: #7A88AF;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+
+
+        .one {
+            color: var(--other-color);
+        }
+
+        .two {
+            color: var(--varCon-color);
+        }
+
+        .three {
+            color: var(--string-color);
+        }
+
+        body{
+            text-align: center;
+            background-color: #dfe3ee;
+            font-family: "Source Sans 3", system-ui;
+        }
+
+
+        #examples {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #examples > div {
+
+            text-align: left;
+            margin: 30px;
+            padding: 10px 20px 10px 8px;
+            background-color: #211E30;
+            color: white;
+            font-size: 10px;
+            width: 250px;
+            }
+
+        #buttonsec {
+           font-size: 10px;
+           width: 80%;
+           margin: 20px auto;
+        }
+
+        #heading {
+
+            padding: 5%;
+
+        }
+
+        #heading h1 {
+           
+            font-size: 100px;
+        }
+
+        
+            hr {
+              border: none; /* Removes the default border */
+              height: 1px;  /* Adjust the thickness of the line */
+              background-color: #7A88AF; /* Change the line color */
+              width: 80%; /* Adjust the width of the line */
+              margin: 20px auto; /* Add spacing around the line and center it */
+              }
+
+              
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24,
+            }
+
+        #button {
+            border: none;
+            border-radius: 30px;
+            margin: 10px auto;
+            padding: 10px 15px;
+        }
+
+        #button:hover {
+            background-color: #7A88AF;
+            border: 1px solid #dfe3ee;
+        }
+
+        footer {
+            background: #211E30;
+            color: #dfe3ee;
+            padding: 20px;
+            font-size: 8px;
+        }
+        a{
+            color: #dfe3ee;
+            font-size: 12px;
+            padding-right: 10px;
+        }
+
+</style>
+
+    
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="heading">
+            <h1>JavaScript</h1>
+            <h2>Ternary Operator</h2>
+            <br>
+            <p>A ternary operator is used to simplify an if...else statement.</p>
+        </div>
+
+        <hr>
+
+            <h3>Example</h4>
+
+            <div id="examples">
+
+            <div>
+                <p>
+               <span class="one">let isNightTime</span> = <span>true;</span><br>
+
+                 <span class="one">if</span> (<span class="two">isNightTime</span>) { <br>
+                    <span class="two">console</span>.log (<span class="three">'Turn on the lights!'</span>); <br>
+                 } <span class="one">else </span>{ <br>
+                 <span class="two">console</span>.log(<span class="three">'Turn off the lights!'</span>);<br>
+                }
+                </p>
+
+            </div>
+
+            <span class="material-symbols-outlined">
+                arrow_right_alt
+                </span>
+
+            <div>
+                <p>
+                    <span class="two">isNightTime</span> ? <span class="two">console</span>.log(<span class="three">'Turn on the lights!'</span)<br>
+                    : <span class="two">console</span>.log(<span class="three">'Turn off the lights!'</span>);
+                </p>
+            </div>
+
+            <hr>
+
+        </div>
+
+        <div id="buttonsec">
+
+        <p>Using the ternary operator & falsy method, I have written a simple code that will determine if the user is of legal drinking age. Please click the button below to see how it operates.</p>
+            
+
+        <button id="button">Click me</button>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://github.com/Tanya-abi" target="_blank"><i class="fab fa-github"></i></a> 
+        <small> &copy;   Coded by Tanyaradzwa Chigwida</small>
+
+    </footer>
+    
+    <script src="Ternary_operator.js"></script>
+</body>
+</html>
