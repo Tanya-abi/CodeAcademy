@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Else if Statements</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+         :root {
+            --varCon-color: #FB8772;
+            --string-color: #E9CD7A;
+            --other-color: #7A88AF;
+        }
+
+        .one {
+            color: var(--other-color);
+        }
+
+        .two {
+            color: var(--varCon-color);
+        }
+
+        .three {
+            color: var(--string-color);
+        }
+
+        body{
+            text-align: center;
+            background: linear-gradient(171.8deg, rgb(5, 111, 146) 13.5%, rgb(6, 57, 84) 78.6%);
+            font-family: "Roboto", sans-serif;
+        }
+
+        h1{
+            font-size: 80px; 
+        }
+
+        h2{
+            font-size: 40px;
+        }
+
+        form {
+            border: white solid 1px;
+            border-radius: 30px;
+            padding: 40px;
+            background-color: #146F92;
+
+        }
+
+        input{
+            width: 200px;
+            margin: 10px;
+            border: none;
+            padding: 8px;
+            background:rgb(6, 57, 84);
+            color: white;
+        }
+        #forms{
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
+
+       button{
+        padding: 4px 38px;
+        margin-top: 30px ;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(13, 81, 117);
+        color: white;
+       }
+
+       #feedback{
+
+        background-color: #146F92;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 20px
+
+        
+       }
+
+       #examples {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #examples > div {
+
+            text-align: left;
+            margin: 30px;
+            padding: 10px 20px 10px 8px;
+            background-color: black;
+            color: white;
+            font-size: 10px;
+            width: 250px;
+            }
+
+
+        
+
+    </style>
+</head>
+<body>
+
+    <main>
+
+    <div>
+        <h1>JavaScript</h1>
+        <h2>Else if Statements</h2>
+
+        <div>
+            <p id="definition">The else if statement allows you to check multiple conditions in a sequence. When the first if condition is not true, the program checks the next else if condition, and so on. If none of the conditions are true, the else block is executed (if present)</p>
+        </div>
+
+        <div id="examples">
+
+        <div>
+            const age = 20; <br> <br>
+            if (age < 18) {<br>
+                console.log("You are a minor.");<br>
+            } else if (age >= 18 && age < 21) { <br>
+                console.log("You are an adult, but cannot drink alcohol.");<br>
+            } else {<br>
+                console.log("You are an adult and can drink alcohol.");<br>
+            }
+
+        </div>
+
+        <div>
+            const temperature = 35;<br><br>
+
+            if (temperature < 10) {<br>
+                console.log("It's freezing outside.");<br>
+            } else if (temperature < 25) {<br>
+                console.log("The weather is mild.");<br>
+            } else {<br>
+                console.log("It's hot outside.");<br>
+            }
+
+        </div>
+
+        </div>
+
+        <div>
+            <h2>Activities</h1>
+
+            <p>This page will suggest activies to do depending on users age and day of the week</p>
+
+            <div id="feedback"></div>
+
+            <div id="forms">
+            <form>
+                <input type="text" placeholder="Enter your name." id="name"><br>
+                <input type="text" placeholder="Enter your age." id="age" ><br>
+                <input type="text" placeholder="Enter day of the week." id="day">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+            
+
+
+        </div>
+    </div>
+
+    </main>
+
+
+    <script src="Else_if_statements.js"></script>
+</body>
+</html>
