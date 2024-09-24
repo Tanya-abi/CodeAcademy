@@ -35,3 +35,48 @@ function subForm (event) {
     document.querySelector('button').addEventListener('click', subForm);
 
 
+
+   function calculate(event) {
+      event.preventDefault(); // Prevent form submission
+  
+      // Get the values of num1, num2, and the operator
+      const number1 = parseFloat(document.getElementById("num1").value);
+      const number2 = parseFloat(document.getElementById("num2").value);
+      const operator = document.getElementById("operators").value;
+      const displayfeed = document.getElementById('cal_feedback');
+  
+      // Check if the numbers are valid
+      if (isNaN(number1) || isNaN(number2)) {
+          displayfeed.innerHTML = "Please enter valid numbers!";
+          return;
+      }
+  
+      // Perform calculation based on the operator
+      let result;
+      switch (operator) {
+          case "+":
+              result = number1 + number2;
+              break;
+          case "-":
+              result = number1 - number2;
+              break;
+          case "*":
+              result = number1 * number2;
+              break;
+          case "/":
+              if (number2 === 0) {
+                  displayfeed.innerHTML = "Cannot divide by zero!";
+                  return;
+              }
+              result = number1 / number2;
+              break;
+          default:
+              result = "No calculations performed.";
+      }
+  
+      // Display the result
+      displayfeed.innerHTML = "Result: " + result;
+  }
+  
+  // Add event listener to the form
+  document.getElementById('calcForm').addEventListener('submit', calculate);

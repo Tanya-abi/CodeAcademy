@@ -84,13 +84,13 @@
         
        }
 
-       #examples {
+       .examples {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
 
-        #examples > div {
+        .examples > div {
 
             text-align: left;
             margin: 30px;
@@ -110,15 +110,19 @@
 
     <main>
 
+    <section id="elseIf">
+
     <div>
         <h1>JavaScript</h1>
+
         <h2>Else if Statements</h2>
 
-        <div>
-            <p id="definition">The else if statement allows you to check multiple conditions in a sequence. When the first if condition is not true, the program checks the next else if condition, and so on. If none of the conditions are true, the else block is executed (if present)</p>
-        </div>
+        <p id="definition">The else if statement allows you to check multiple conditions in a sequence. When the first if condition is not true, the program checks the next else if condition, and so on. If none of the conditions are true, the else block is executed (if present)</p>
+        
+    </div>
+        
 
-        <div id="examples">
+    <div class="examples">
 
         <div>
             const age = 20; <br> <br>
@@ -145,16 +149,16 @@
 
         </div>
 
-        </div>
+    </div>
 
-        <div>
-            <h2>Activities</h1>
+    <div>
+        <h2>Activities</h1>
 
-            <p>This page will suggest activies to do depending on users age and day of the week</p>
+        <p>This page will suggest activies to do depending on users age and day of the week</p>
 
-            <div id="feedback"></div>
+        <div id="feedback"></div>
 
-            <div id="forms">
+        <div id="forms">
             <form>
                 <input type="text" placeholder="Enter your name." id="name"><br>
                 <input type="text" placeholder="Enter your age." id="age" ><br>
@@ -163,16 +167,94 @@
                 <button type="submit">Submit</button>
             </form>
         </div>
+    </div>
 
-            
+        <hr>
+
+    <section id="switch">
+
+        <div>
+            <h2>Switch statement</h2>
+            <p>The switch statement is a control flow structure used to evaluate a variable or expression against multiple possible values. It's a more readable and efficient alternative to multiple if...else if statements when checking a single variable or expression against various specific values.</p>
+        </div>
+
+        <div class="examples">
+
+            <div>
+            let fruit = "apple";<br><br>
+
+               if (fruit === "apple") {<br>
+                  console.log("This is an apple.");<br>
+                } else if (fruit === "banana") {<br>
+                  console.log("This is a banana."); <br>
+                } else if (fruit === "orange") {<br>
+                  console.log("This is an orange.");<br>
+                } else {<br>
+                  console.log("Unknown fruit."); <br>
+                }
+            </div>
+
+            <div>
+                let fruit = "apple";<br><br>
+
+                switch (fruit) { <br>
+                  case "apple": <br>
+                  console.log("This is an apple.");<br>
+                  break; <br>
+                  case "banana": <br>
+                  console.log("This is a banana.");<br>
+                  break; <br>
+                  case "orange":
+        console.log("This is an orange.");
+        break;
+    default:
+        console.log("Unknown fruit.");
+}
+let fruit = "apple";
+
+switch (fruit) {
+    case "apple":
+        console.log("This is an apple.");
+        break;
+    case "banana":
+        console.log("This is a banana.");
+        break;
+    case "orange":
+        console.log("This is an orange.");
+        break;
+    default:
+        console.log("Unknown fruit.");
+}
+
+
+            </div>
 
 
         </div>
-    </div>
+    
+
+        <div>
+        
+            <form id="calcForm">
+                <div id="cal_feedback"></div>
+                <input id="num1" type="text" placeholder="Enter number">
+                <select id="operators">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">x</option>
+                    <option value="/">%</option>
+                </select>
+                <input id="num2" type="text" placeholder="Enter number">
+                <button type="submit" id="equals">=</button>
+            </form>
+            
+        </div>    
+
+            
 
     </main>
 
-
     <script src="Else_if_statements.js"></script>
+
 </body>
 </html>
